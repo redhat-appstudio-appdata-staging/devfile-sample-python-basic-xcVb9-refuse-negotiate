@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-unhk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/yangcao-tenant/devfile-sample-python-basic/devfile-sample-python-basic-unhk@sha256:7188a1d670d0b3a19dfa39017341bd1d78a0e2d9100096a8f8ea3ef85bfda758
+        name: my-python
+        resources: {}
+status: {}
